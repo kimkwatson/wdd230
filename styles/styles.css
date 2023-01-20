@@ -6,24 +6,23 @@ body {
 
 header, main, footer {
     margin: 1.25rem auto;
-    max-width: 560px;
+    max-width: 760px;
 }
 
 header {
     background-color: seagreen;
     color: white;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
     padding: 1rem;
-    box-shadow: 5px 10px 8px darkgray;
 }
 
 h1 {
-    font-size: 30px;
-    padding: 40px;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 header img {
-    float: left;
     padding: .5rem;
     margin-left: 20px;
     border: 1px solid darkgray;
@@ -31,21 +30,33 @@ header img {
 
 h2, ul {
     border-bottom: 2px solid black;
+    padding: 15px;
+    margin: 15px;
+}
+
+ul li {
+    padding: 15px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 ul {
     padding: 1.25rem;
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 footer {
     background-color: seagreen;
     color: white;
     text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
     padding: 1.25rem;
-    box-shadow: 5px 10px 8px darkgray;
 }
 
 h3 {
     color: blanchedalmond;
-    font-size: 1.25;
+    font-size: .75rem;
 }
