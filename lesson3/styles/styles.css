@@ -42,7 +42,7 @@ nav ul li a {
     padding: 1rem;
 }
 
-h3 {
+h2 {
     color: #eb4510;
     font-family: 'Quattrocento', serif;
     text-align: center;
@@ -68,4 +68,14 @@ footer {
     display: flex;
     text-align: center;
     padding: 3rem;
+}
+
+/* Target Audience Page */
+
+.scenarios {
+    text-align: center;
+    list-style-position: inside;
+    font-size: .8rem;
+    font-family: 'Noto Serif JP', serif;
+    margin: 2rem;
 }
