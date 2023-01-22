@@ -29,14 +29,23 @@ h2 {
     font-size: 1.5rem;
 }
 
+p {
+    max-width: 760px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: 'Noto Serif JP', serif;
+}
+
 footer {
     position: fixed;
     bottom: 0;
 }
 
-}
-
 /* Target Audience Page */
+
+.audience {
+    font-size: 1.25rem;;
+}
 
 .scenarios {
     font-size: 1.25rem;
@@ -49,4 +58,6 @@ footer {
 
 .personas img {
     width: 200px;
+}
+
 }
