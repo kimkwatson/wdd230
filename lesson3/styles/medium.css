@@ -1,7 +1,6 @@
 @media only screen and (min-width: 32.5em) {
 
 header, footer, nav, main {
-    max-width: 1000px;
     display: flex;
 }
 
@@ -22,10 +21,32 @@ nav ul li a {
     padding: 3rem;
 }
 
+main {
+    margin-bottom: 200px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
 }
 
 /* Target Audience Page */
 
 .scenarios {
     font-size: 1.25rem;
+}
+
+.personas p {
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+.personas img {
+    width: 200px;
 }

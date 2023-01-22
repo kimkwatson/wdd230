@@ -5,21 +5,21 @@ body {
     text-align: center;
 }
 
-header, footer, nav, main {
+header, footer, nav {
     display: flex;
     flex-flow: column;
 	align-items: center;
 	justify-content: center;
     margin: 0 auto;
+    width: 100%;
 }
 
 header {
     color: #0a7496;
     font-family: 'Quattrocento', serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 300;
     text-align: center;
-    padding: 3rem;
 }
 
 nav {
@@ -38,21 +38,30 @@ nav ul li a {
     font-family: 'Cinzel', serif;
 	text-align: center;
 	text-decoration: none;
-	font-size: 1.5rem;
-    padding: 1rem;
+	font-size: 1.25rem;
+    padding: 2rem;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+	align-items: center;
+	justify-content: center;
+    margin: 15px;
+    margin: 0 auto;
 }
 
 h2 {
     color: #eb4510;
     font-family: 'Quattrocento', serif;
     text-align: center;
-    font-size: 2rem;
-    padding: 1.5rem;
+    font-size: 1.25rem;
 }
 
 p {
+    max-width: 760px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: 'Noto Serif JP', serif;
 }
 
@@ -64,11 +73,12 @@ footer {
     background-color: #4b4343;
     color: lightgray;
     font-family: 'Comfortaa', cursive;
-    max-width: 760px;
     display: flex;
     text-align: center;
-    padding: 3rem;
+    padding: 1.5rem;
 }
+
+
 
 /* Target Audience Page */
 
@@ -79,3 +89,51 @@ footer {
     font-family: 'Noto Serif JP', serif;
     margin: 2rem;
 }
+
+.personas p {
+    font-size: .4rem;
+    text-align: justify;
+}
+
+.personas img {
+    width: 50px;
+    float: left;
+    padding: 0 10px 10px 0;
+}
+
+/* Design Page */
+
+.colors {
+    width: 100%;
+    max-width: 760px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: lightgray;
+    font-family: 'Quattrocento', serif;
+  }
+  .colors td{
+    width: 20%;
+    height: 3em;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .primary {
+    background-color: #0D3B66;
+    color: #D3D3D3;
+  }
+  .secondary {
+    background-color: #4b4343;
+    color: #D3D3D3;
+  }
+  .accent1 {
+    background-color: #0a7496;
+    color: #D3D3D3;
+  }
+  .accent2{
+    background-color: #eb4510;
+    color: #D3D3D3;
+  }
+  .accent3{
+    background-color: #D3D3D3;
+  }
