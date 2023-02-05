@@ -14,43 +14,60 @@
 <body>
     <header>
         <img src="images/cotton-logo-small-words.png" alt="chamber logo">
-        <h1>Queen Creek</h1>
-        <h2>Chamber of Commerce</h2>
-        <img class="facebook" src="images/facebook.svg">
-        <img class="linkedin" src="images/linkedin.svg">
+        <div class="logo-container">
+            <h1>Queen Creek</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-            <ul>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="index.html">Discover</a></li>
                 <li><a href="index.html">Directory</a></li>
                 <li><a href="index.html">Join</a></li>
                 <li><a href="index.html">Contact</a></li>
             </ul>
-        <span class="date">Thursday, January 26 2023</span>
         </nav>
+            <img class="facebook" src="images/facebook.svg">
+            <img class="instagram" src="images/instagram.svg">
+            <img class="twitter" src="images/twitter.svg">
+        <span class="date"></span>
     </header>
     <main>
         <section class="hero">Hero with site name and call to action</section>
         <section>Event</section>
         <section>Weather</section>
-        <section>News Release</section>
-        <section>
+        <section>Join</section>
+        <section class="news">News Release</section>
+        <section class="spotlight-container">
+            <div class="spotlight spotlight1-card">
             <p>Spotlight 1</p>
+            </div>
+            <div class="spotlight spotlight2-card">
             <p>Spotlight 2</p>
+            </div>
+            <div class="spotlight spotlight3-card">
+            <p>Spotlight 3</p>
+            </div>
         </section>
     </main>
     <footer>
-        <img src="images/cotton-logo-small-words.png">
-        <h3>Queen Creek Chamber of Commerce</h3>
-        <p>Queen Creek, Arizona 85140</p>
-        <p>info@qcchamber.org</p>
-        <p>480.275.4145</p>
-        <p>Location Map</p>
+        <img class="footer-img" src="images/cotton-logo-smaller.png"> 
+        <div class="footer-address">
+            <h3>Queen Creek Chamber of Commerce</h3>
+            <p>21838 S. Ellsworth Rd.</p>
+            <p>Queen Creek, Arizona 85142</p>
+        </div>
+        <div class="footer-info">
+            <p>info@qcchamber.org</p>
+            <p>480.275.4145</p>
+            <p><a href="https://goo.gl/maps/Jnsu3nWrWWe4Dp5TA"><img class="pin" src="images/map-pin.png"></a>Location</p>
+        </div>
         <ul>
-            <li>&copy2023 Queen Creek Chamber</li>
+            <li>&copy; <span id="currentYear"></span> Queen Creek Chamber</li>
             <li>Kimberly Watson</li>
             <li>WDD 230 Project</li>
-            <li>Last Modification: 1/26/2023</li>
+            <li>Last Modification: <span id="lastMod"></span></li>
         </ul>
     </footer>
     <script src="scripts/script.js"></script>

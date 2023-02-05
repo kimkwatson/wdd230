@@ -1,5 +1,45 @@
 /* 35rem is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
+    
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
+img {
+    max-width: 175px;
+}
+
+h1 {
+    margin: 0 0 15px 15px;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 0 0 15px 15px;
+    font-size: 1rem;
+}
+
+nav {
+    width: auto;
+}
+
+nav ul#primaryNav {
+    display: flex;
+    margin-left: 2vw;
+    border-left: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+
+footer {
+    font-size: 1.25em;
+}
 
 } /* end of medium */
