@@ -1,0 +1,97 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.profile {
+    float: left;
+    margin: 3rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px gray;
+}
+
+header span {
+    font-family: "La Belle Aurore", serif;
+    font-size: 3rem;
+    align-self: center;
+}
+
+h1 {
+    font-family: "Lustria", serif;
+    margin: 1rem;
+    border-bottom: 1.5px solid black;
+}
+
+.container {
+    margin: 1rem 2vw;
+    
+}
+
+.card {
+    
+    border: 1px solid slategray;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin: 1rem 0;
+    overflow: hidden;
+    
+}
+
+h2 {
+    display: block;
+    padding: 1rem;
+    background-color: lightskyblue;
+    font-family: "Lustria", serif;
+    text-align: center;
+}
+
+main ul, h3 {
+    font-family: "Montserrat", sand-serif;
+    padding: 1rem;
+    
+}
+
+nav {
+    background-color: coral;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255, 0.2);
+}
+
+nav .active {
+    background-color: rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: burlywood;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    padding: .25rem;
+}
