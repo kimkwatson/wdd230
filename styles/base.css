@@ -53,7 +53,7 @@ h2 {
     text-align: center;
 }
 
-main ul, h3 {
+main ul li, h3 {
     font-family: "Montserrat", sand-serif;
     padding: 1rem;
     
