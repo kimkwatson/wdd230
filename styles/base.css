@@ -8,6 +8,7 @@ header {
     display: flex;
     margin-top: 2rem;
     justify-content: center;
+    position: relative;
 }
 
 .profile {
@@ -22,6 +23,21 @@ header span {
     font-family: "La Belle Aurore", serif;
     font-size: 3rem;
     align-self: center;
+}
+
+#darkButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+main.dark {
+    background-color: black;
+}
+
+main.dark h2 {
+    color: white;
 }
 
 h1 {
