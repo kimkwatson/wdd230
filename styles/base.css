@@ -9,6 +9,7 @@ header {
     margin-top: 2rem;
     justify-content: center;
     position: relative;
+    background-color: whitesmoke;
 }
 
 .profile {
@@ -25,18 +26,19 @@ header span {
     align-self: center;
 }
 
-#darkButton {
+#modeButton {
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
 }
 
-main.dark {
+.dark {
     background-color: black;
+    color: white;
 }
 
-main.dark h2 {
+.dark h2 {
     color: white;
 }
 

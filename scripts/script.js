@@ -6,9 +6,11 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 })
 
-const modeButton = document.querySelector('#darkButton');
+const modeButton = document.querySelector("#modeButton");
+const body = document.querySelector("body");
 const main = document.querySelector("main");
 
 modeButton.addEventListener('click', () => {
+    body.classList.toggle('dark');
     main.classList.toggle('dark');
-})
+});
