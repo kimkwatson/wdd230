@@ -7,7 +7,7 @@
 header {
     display: flex;
     margin-top: 2rem;
-    justify-content: center;
+    justify-content: left;
     position: relative;
     background-color: whitesmoke;
 }
@@ -33,13 +33,53 @@ header span {
     cursor: pointer;
 }
 
-.dark {
+body.dark {
     background-color: black;
     color: white;
 }
 
+.dark header {
+    background-color: slategray;
+}
+
 .dark h2 {
     color: white;
+}
+
+.dark section {
+    background-color: black;
+    color: white;
+    border-color: #ddd;
+}
+
+.dark section a {
+    color: whitesmoke;
+}
+
+.dark .card h2 {
+    background-color: #2c6b88;
+}
+
+.dark footer {
+    background-color: sienna;
+}
+
+#hamButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+#hamButton::before {
+    content: "\002630";
+}
+
+#hamButton.open::before {
+    content: "x";
 }
 
 h1 {
@@ -60,7 +100,10 @@ h1 {
     border-radius: 10px;
     margin: 1rem 0;
     overflow: hidden;
-    
+}
+
+section a {
+    color: black;
 }
 
 h2 {
@@ -77,30 +120,46 @@ main ul li, h3 {
     
 }
 
+ul.menu li a {
+    display: block;
+    text-align: right;
+    color: black;
+    padding: .75rem 2vw;
+    text-decoration: none;
+    
+}
+
 nav {
     background-color: coral;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
 }
 
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
 nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+ul.menu {
+    display: none;
     list-style-type: none;
 }
 
-nav a {
-    display: block;
-    text-align: center;
-    color: black;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-nav a:hover {
+ul.menu a:hover {
     background-color: rgba(255,255,255, 0.2);
 }
 
-nav .active {
-    background-color: rgba(0,0,0,0.1);
+li.active a {
+    background-color: rgba(0,0,0,0.2);
 }
 
 footer {

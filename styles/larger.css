@@ -1,4 +1,4 @@
-@media only screen and (min-width: 46rem) {
+@media only screen and (min-width: 800px) {
     
     body {
         margin: 0 auto;
@@ -24,8 +24,21 @@
         box-shadow: 1px 1px 10px black;
     }
 
+    nav {
+        grid-template-rows: 1fr;
+    }
+
     nav ul {
         display: flex;
         justify-content: space-around;
+    }
+
+    #hamButton {
+        display: none;
+    }
+
+    ul.menu, ul.menu.open {
+        display: flex;
+        justify-content: flex-end;
     }
 }
