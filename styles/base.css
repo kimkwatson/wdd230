@@ -150,7 +150,7 @@ nav.open {
 }
 
 ul.menu {
-    display: none;
+    display: block;
     list-style-type: none;
 }
 
