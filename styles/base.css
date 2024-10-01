@@ -5,7 +5,9 @@
 }
 
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin-top: 2rem;
     justify-content: left;
     position: relative;
@@ -13,7 +15,7 @@ header {
 }
 
 .profile {
-    float: left;
+    grid-column: 1;
     margin: 3rem;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -27,7 +29,7 @@ header span {
 }
 
 #modeButton {
-    position: absolute;
+    grid-column: 3/4;
     top: 10px;
     right: 10px;
     cursor: pointer;
@@ -72,6 +74,7 @@ body.dark {
     width: 100%;
     text-align: right;
     padding: .25rem 2vw;
+    grid-column: 4/4;
 }
 
 #hamButton::before {
