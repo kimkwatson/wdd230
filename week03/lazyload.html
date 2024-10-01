@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header>
+        <h1>Mount Rushmore</h1>
+    </header>
+    <main>
+       <img src="images/family-sign.webp" alt="Mt Rushmore Sign" loading="lazy" width="400" height="600">
+       <img src="images/kids-rushmore.webp" alt="Kids at Rushmore" loading="lazy" width="400" height="600">
+       <img src="images/troy-rushmore.webp" alt="Troy at Rushmore" loading="lazy" width="400" height="600">
+       <img src="images/washington-peek.webp" alt="Washington" loading="lazy" width="400" height="600">
+       <img src="images/state-flags.webp" alt="State Flags" loading="lazy" width="400" height="600">
+       <img src="images/arizona-sign.webp" alt="Arizona Sign" loading="lazy" width="400" height="600">
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> | Kim Watson</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
