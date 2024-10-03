@@ -91,6 +91,26 @@ h1 {
     border-bottom: 1.5px solid black;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20%;
+    left: 15px;
+    width: 30%;
+    background-color: rgba(255,255,255,0.5);
+    padding: 1rem;
+    text-align: center;
+}
+
 .container {
     margin: 1rem 2vw;
     
