@@ -102,12 +102,20 @@ h1 {
 
 .overlay {
     position: absolute;
-    bottom: 20%;
-    left: 15px;
-    width: 30%;
-    background-color: rgba(255,255,255,0.5);
+    bottom: 10%;
+    left: 55px;
+    width: auto;
+    background-color: rgba(255,255,255,0.6);
     padding: 1rem;
     text-align: center;
+    font-size: 1rem;
+    font-family: "La Belle Aurore", serif;
+    white-space: nowrap;
+}
+
+.overlay p {
+    padding: .5rem;
+    
 }
 
 .container {
@@ -139,7 +147,6 @@ h2 {
 main ul li, h3 {
     font-family: "Montserrat", sand-serif;
     padding: 1rem;
-    
 }
 
 ul.menu li a {
@@ -148,7 +155,7 @@ ul.menu li a {
     color: black;
     padding: .75rem 2vw;
     text-decoration: none;
-    
+    font-family: "Montserrat", sand-serif;
 }
 
 nav {
