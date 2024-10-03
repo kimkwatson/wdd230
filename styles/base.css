@@ -53,7 +53,7 @@ body.dark {
 }
 
 .dark .overlay {
-    color: black;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .dark h2 {
