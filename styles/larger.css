@@ -2,14 +2,9 @@
     
     body {
         margin: 0 auto;
-        width: 70%;
+        width: 80%;
     }
-
-    .profile {
-        width: 5%;
-        height: auto;
-    }
-
+    
     header span {
         font-size: 4rem;
     }
