@@ -54,6 +54,7 @@ body.dark {
 
 .dark .overlay {
     background-color: rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 30px darkgray;
 }
 
 .dark h2 {
@@ -121,11 +122,13 @@ h1 {
     left: 5%;
     width: auto;
     background-color: rgba(255,255,255,0.6);
+    box-shadow: 10px 10px 30px white;
     padding: 1rem;
     text-align: center;
     font-size: 1rem;
     font-family: "La Belle Aurore", serif;
     white-space: nowrap;
+    border-radius: 10px;
 }
 
 .overlay p {
