@@ -14,3 +14,17 @@ modeButton.addEventListener('click', () => {
     body.classList.toggle('dark');
     main.classList.toggle('dark');
 });
+
+const visitsDisplay = document.querySelector('.visits');
+
+let visits = Number(window.localStorage.getItem('numVisits-ls')) || 0;
+
+if (visits !== 0) {
+    visitsDisplay.textContent = visits;
+}
+else {
+    visitsDisplay.textContent = `This is your first visit - Welcome!`;
+}
+
+visits++;
+localStorage.setItem('numVisits-ls', visits);

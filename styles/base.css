@@ -150,6 +150,13 @@ h1 {
 
 section a {
     color: black;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+section a:hover {
+    color: #C53500;
+    font-weight: bold;
 }
 
 h2 {
@@ -160,7 +167,7 @@ h2 {
     text-align: center;
 }
 
-main ul li, h3 {
+main ul li, h3, .visits {
     font-family: "Montserrat", sand-serif;
     padding: 1rem;
 }
