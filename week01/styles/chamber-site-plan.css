@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C3C6BF;
+}
+
+h1 {
+    color: #33312E;
+    background-color: #879681;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: "Fraunces", serif;
+}
+
+main {
+    color: #33312E;
+    background-color: #ECE6D9;
+    width: 70%;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+main section {
+    border: 1.5px solid #BC984E;
+    border-radius: 10px;
+    box-shadow: 5px px gray;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto 1rem;
+    width: 80%;
+}
+
+h2 {
+    color:#23645C;
+    font-size: 2rem;
+    text-decoration: underline;
+    padding: 1rem;
+    font-family: "Playfair Display", serif;
+}
+
+p {
+    color:#33312E;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-family: "Inter", sans-serif;
+}
+
+ul {
+    padding: 1rem;
+}
+
+li {
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: center;
+    color:#33312E;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-family: "Inter", sans-serif;
+}
+
+#display {
+  font-family: "Fraunces", serif;
+}
+
+#nav {
+  font-family: "Open Sans", sans-serif;
+}
+
+#heading {
+  font-family: "Playfair Display", serif;
+}
+
+#paragraph {
+  font-family: "Inter", sans-serif;
+}
+
+picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Colors Table */
+
+.colors {
+    width: 100%;
+    max-width: 760px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: lightgray;
+    font-family: 'Quattrocento', serif;
+  }
+  .colors td{
+    width: 16.66%;
+    height: 3em;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .primary {
+    background-color: #879681;
+    color: #33312E;
+  }
+  .secondary {
+    background-color: #BC984E;
+    color: #33312E;
+  }
+  .neutral1 {
+    background-color: #C3C6BF;
+    color: #33312E;
+  }
+  .neutral2{
+    background-color: #ECE6D9;
+    color: #33312E;
+  }
+  .accent{
+    background-color: #23645C;
+    color: #D3D3D3;
+  }
+  .text {
+    background-color: #33312E;
+    color: #D3D3D3;
+  }
+
+/* Footer */
+
+footer {
+    position: sticky;
+    background-color: black;
+    color:whitesmoke;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 3rem;
+    font-family: "Inter", sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+
+  main {
+    width: 100%;
+    padding: 0;
+    font-size: smaller;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  main section {
+    width: 100%;
+    margin: 0;
+    border: revert-layer;
+    border-top: 1.5px solid #BC984E;
+    border-radius: 0;
+  }
+
+}
