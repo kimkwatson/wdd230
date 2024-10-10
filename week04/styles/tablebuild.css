@@ -1,0 +1,48 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table {
+    margin: 10px auto;
+    border: 1px solid black;
+    box-shadow: 0 0 10px darkgray;
+    border-collapse: collapse;
+}
+
+#empty {
+    background-color: #59a884;
+    border-top: none;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: black;
+    font-size: 1rem;
+}
+
+tr:first-child th {
+    background-color: #59a884;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    border-bottom: none;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+th {
+    background-color: #64937e;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
