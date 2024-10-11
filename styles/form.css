@@ -1,3 +1,9 @@
+:root {
+    --lightblue: #71a0b5;
+    --textcolor: #33312E;
+    --darkcoral: #C53500;
+}
+
 #form fieldset {
     margin: 2rem 0;
     border: 1px solid #ddd;
@@ -6,14 +12,14 @@
 }
 
 #form legend {
-    color: #33312E;
+    color: var(--textcolor);
     padding: 0 .5rem;
     font-size: 2rem;
     font-family: "Lustria", serif;
 }
 
 .recorded {
-    color: #71a0b5;
+    color: var(--lightblue);
     padding: 1.5rem;
     font-size: 2rem;
 }
@@ -21,7 +27,7 @@
 #form label {
     display: block;
     padding: 1rem;
-    color:#33312E;
+    color: var(--textcolor);
     font-size: 1.5rem;
     font-family: "Montserrat", sand-serif;
 }
@@ -49,7 +55,7 @@
 
 #form input[type="submit"] {
     border: none;
-    background-image: linear-gradient(#95daf7, #71a0b5);
+    background-image: linear-gradient(#95daf7, var(--lightblue));
     color: #fff;
     border-radius: 6px;
     padding: .8rem;
@@ -62,22 +68,22 @@
 }
 
 #form input:required {
-    border-left: solid 5px #C53500;
+    border-left: solid 5px var(--darkcoral);
 }
 
 #form input:required:valid {
-    border-left: solid 5px lightblue;
+    border-left: solid 5px var(--lightblue);
 }
 
 #message {
-    color: #C53500;
+    color: var(--darkcoral);
     padding: 0 1rem 0 1rem;
     font-size: 1.5rem;
     font-family: "Lustria", serif;
 }
 
 #currentValue {
-    color: #33312E;
+    color: var(--textcolor);
     padding: 0 1rem 0 1rem;
     font-size: 2rem;
     font-family: "Lustria", serif;
