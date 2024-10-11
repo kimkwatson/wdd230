@@ -1,0 +1,129 @@
+:root {
+    --yellow: #BC984E;
+    --green: #879681;
+    --darkgreen: #23645C;
+    --black: #33312E;
+    --neutral1: #C3C6BF;
+    --neutral2: #ECE6D9;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--neutral1);
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-template-rows: 1;
+}
+
+.logo {
+    padding: 1vw 0 1vw 1vw;
+    width: 170px;
+    height: auto;
+    max-width: 100%;
+}
+
+h1 {
+    color: var(--black);
+    font-family: "Fraunces", serif;
+    font-size: 1.5rem;
+    grid-column: 2/4;
+    align-self: center;
+}
+
+#hamButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 2rem 2vw;
+    grid-column: 4;
+    text-align: right;
+    align-self: end;
+    margin-bottom: 0 auto;
+}
+
+#hamButton::before {
+    content: "\002630";
+}
+
+#hamButton.open::before {
+    content: "x";
+}
+
+
+ul.menu li a {
+    display: block;
+    text-align: left;
+    color: var(--black);
+    padding: .75rem 2vw;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+nav {
+    background-color: var(--green);
+    font-size: 1.5rem;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+ul.menu {
+    display: block;
+    list-style-type: none;
+}
+
+ul.menu a:hover {
+    background-color: rgba(255,255,255, 0.2);
+}
+
+li.active a {
+    background-color: rgba(0,0,0,0.2);
+}
+
+main {
+    background-color: var(--neutral2);
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main section {
+    border: 2px solid var(--darkgreen);
+    width: 100px;
+    height: 100px;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+}
+
+.spotlight {
+    border: 1px solid var(--darkgreen);
+    display: grid;
+}
+
+footer {
+    background-color: var(--black);
+    color: whitesmoke;
+    padding: 1rem;
+    /*position: sticky;*/
+    font-family: "Open Sans", sans-serif;
+}

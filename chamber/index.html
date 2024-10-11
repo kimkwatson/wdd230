@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen Creek Chamber of Commerce</title>
+    <meta name="description" content="Queen Creek Chamber of Commerce">
+    <meta name="author" content="Kim Watson">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Queen Creek Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/qc-chamber-logo">
+    <meta property="og:url" content="kimkwatson.github.io/wdd230/chamber">
+</head>
+<body>
+    <header>
+        <img src="images/cotton-logo-smaller.png" alt="QC Chamber Logo" class="logo" width="44" height="42">
+        <h1>Queen Creek Chamber of Commerce</h1>
+        <button id="hamButton"></button>
+    </header>
+    <nav id="animateMe">
+        <ul class="menu">
+            <li class="active"><a>Home</a></li>
+            <li><a>Discover</a></li>
+            <li><a>Directory</a></li>
+            <li><a>Join</a></li>
+        </ul>
+        
+        
+    </nav>
+    <picture id="hero">
+        <img src="" alt="queen creek" loading="lazy">
+    </picture>
+    <button></button>
+    <main>
+        
+        <section class="card">
+            <p>Curent Events</p>
+        </section>
+        <section class="card">
+            <p>Weather</p>
+        </section>
+        <section class="card">
+            <div class="spotlight">
+                <p>Spotlight 1</p>
+            </div>
+            <div class="spotlight">
+                <p>Spotlight 2</p>
+            </div>
+            <div class="spotlight">
+                <p>Spotlight 3</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> | Kim Watson</p>
+        <p>Chamber of Commerce Project - Web Development 230</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
