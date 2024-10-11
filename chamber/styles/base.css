@@ -100,10 +100,15 @@ li.active a {
     background-color: rgba(0,0,0,0.2);
 }
 
+.hero {
+    width: 100%;
+    height: auto;
+}
+
 main {
     background-color: var(--neutral2);
     display: flex;
-    width: 100%;
+    width: 0%;
     margin: 0 auto;
 }
 
@@ -121,7 +126,7 @@ main section {
 }
 
 footer {
-    background-color: var(--black);
+    background-color: var(--darkgreen);
     color: whitesmoke;
     padding: 1rem;
     /*position: sticky;*/
