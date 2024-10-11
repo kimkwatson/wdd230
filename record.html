@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="WDD 230 - Kim Watson - Form">
+    <meta name="author" content="Kim Watson">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lustria&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon2.ico">
+    <meta property="og:title" content="Kim Watson - WDD 230 Course Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="wdd230/images/profile.jpg">
+    <meta property="og:url" content="kimkwatson.github.io/wdd230/">
+</head>
+<body>
+    <header>
+        <img src="images/profile-small.webp" alt="Kim Watson Profile" class="profile" width="75" height="100">
+        <span>Kim Watson</span>
+        <div>
+            <img src="images/dark-theme-svgrepo-com.svg" id="modeButton" alt="dark mode" width="45" height="45">
+            <button id="hamButton"></button>
+        </div>
+    </header>
+    <nav id="animateMe">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li class="active"><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>User Information</h1>
+            <p class="recorded">Thank you for submitting the form!</p>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> | Kim Watson | Arizona</p>
+        <p><img src="images/flag.webp" alt="Arizona Flag"></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
