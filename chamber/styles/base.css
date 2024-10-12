@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--neutral2);
+}
+
 header {
     background-color: var(--neutral1);
     margin: 0 auto;
@@ -29,11 +33,22 @@ header {
     max-width: 100%;
 }
 
+.title {
+    grid-column: 2/4;
+    margin-top: 4rem;
+}
+
 h1 {
     color: var(--black);
     font-family: "Fraunces", serif;
     font-size: 1.5rem;
-    grid-column: 2/4;
+    margin: 0;
+}
+
+h2 {
+    color: var(--black);
+    font-family: "Fraunces", serif;
+    font-size: 1.75rem;
     align-self: center;
 }
 
@@ -101,21 +116,71 @@ li.active a {
 }
 
 .hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero img {
     width: 100%;
     height: auto;
 }
 
+
+.join {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    width: auto;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--green);
+    font-family: "Open Sans", san-serif;
+    font-size: 2rem;
+    border: none;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+/*.join {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    width: auto;
+    padding: 1rem;
+    background-color: rgba(35,100,92,0.6);
+    font-family: "Open Sans", san-serif;
+    font-size: 2rem;
+    border: 1px solid var(--black);
+    border-radius: 6px;
+    box-shadow: 10px 5px rgba(255,255,255, 0.4);
+    white-space: nowrap;
+
+}*/
+
+/*.overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: auto;
+    background-color: rgba(255,255,255,);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "La Belle Aurore", serif;
+    white-space: nowrap;
+    border-radius: 10px;
+}*/
+
 main {
     background-color: var(--neutral2);
     display: flex;
-    width: 0%;
     margin: 0 auto;
 }
 
 main section {
     border: 2px solid var(--darkgreen);
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: auto;
     font-family: "Playfair Display", serif;
     font-size: 2rem;
 }
@@ -126,9 +191,18 @@ main section {
 }
 
 footer {
-    background-color: var(--darkgreen);
-    color: whitesmoke;
+    background-color: var(--neutral1);
+    color: var(--black);
     padding: 1rem;
     /*position: sticky;*/
     font-family: "Open Sans", sans-serif;
+}
+
+footer p {
+    padding: .5rem;
+}
+
+.socialmedia img {
+    width: 44px;
+    height: auto;
 }
