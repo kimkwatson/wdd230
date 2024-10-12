@@ -5,6 +5,7 @@
     --black: #33312E;
     --neutral1: #C3C6BF;
     --neutral2: #ECE6D9;
+    --greige: #f2f1ee;
 }
 
 * {
@@ -118,27 +119,33 @@ li.active a {
 .hero {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .hero img {
     width: 100%;
     height: auto;
+    background-color: white;
+    animation: fade 2s;
 }
 
+#container {
+    text-align: center;
+}
 
 .join {
-    position: absolute;
-    top: 35%;
-    left: 40%;
     width: auto;
+    margin: 1rem;
     padding: 1rem;
     cursor: pointer;
-    background-color: var(--green);
+    background-color: var(--darkgreen);
+    color: var(--greige);
     font-family: "Open Sans", san-serif;
     font-size: 2rem;
     border: none;
     border-radius: 6px;
     white-space: nowrap;
+    justify-items: center;
 }
 
 /*.join {
@@ -173,16 +180,34 @@ li.active a {
 
 main {
     background-color: var(--neutral2);
-    display: flex;
-    margin: 0 auto;
+    display: block;
+    margin:  0 auto;
+    width: 100%;
 }
 
 main section {
-    border: 2px solid var(--darkgreen);
     width: 100%;
     height: auto;
+}
+
+main section h2 {
     font-family: "Playfair Display", serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    background-color: var(--yellow);
+    color: whitesmoke;
+    padding: 1.5rem;
+}
+
+main section p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    padding: .25rem;
+}
+
+.card {
+    border-top: 1px solid var(--black);
+    background-color: var(--greige);
+    width: 100%;
 }
 
 .spotlight {
@@ -194,15 +219,24 @@ footer {
     background-color: var(--neutral1);
     color: var(--black);
     padding: 1rem;
-    /*position: sticky;*/
     font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+}
+
+footer div {
+    padding: 1.5rem;
 }
 
 footer p {
+    margin: .5rem;
     padding: .5rem;
 }
 
-.socialmedia img {
+div.socialmedia img {
     width: 44px;
     height: auto;
+}
+
+div.socialmedia {
+    margin: .5rem;
 }
