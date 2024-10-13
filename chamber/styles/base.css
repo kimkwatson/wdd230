@@ -23,13 +23,13 @@ header {
     margin: 0 auto;
     width: 100%;
     display: grid;
-    grid-template-columns: 110px 1fr 1fr 1fr;
+    grid-template-columns: 90px 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
 .logo {
-    padding: 1vw 0 1vw 1vw;
-    width: 100px;
+    padding: 1.6vw 0 1.6vw 1.6vw;
+    width: 80px;
     height: auto;
     max-width: 100%;
 }
@@ -59,7 +59,7 @@ h2 {
     border: none;
     cursor: pointer;
     width: 100%;
-    padding: 2rem 2vw;
+    padding: 1.6rem 2vw;
     grid-column: 4;
     text-align: right;
     align-self: end;
