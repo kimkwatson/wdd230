@@ -136,83 +136,54 @@ li.active a {
 .join {
     width: auto;
     margin: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
     cursor: pointer;
     background-color: var(--darkgreen);
+    box-shadow: 6px 6px 5px var(--green);
     color: var(--greige);
     font-family: "Open Sans", san-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     white-space: nowrap;
     justify-items: center;
 }
 
-/*.join {
-    position: absolute;
-    top: 35%;
-    left: 40%;
-    width: auto;
-    padding: 1rem;
-    background-color: rgba(35,100,92,0.6);
-    font-family: "Open Sans", san-serif;
-    font-size: 2rem;
-    border: 1px solid var(--black);
-    border-radius: 6px;
-    box-shadow: 10px 5px rgba(255,255,255, 0.4);
-    white-space: nowrap;
-
-}*/
-
-/*.overlay {
-    position: absolute;
-    bottom: 10%;
-    left: 5%;
-    width: auto;
-    background-color: rgba(255,255,255,);
-    padding: 1rem;
-    text-align: center;
-    font-size: 1rem;
-    font-family: "La Belle Aurore", serif;
-    white-space: nowrap;
-    border-radius: 10px;
-}*/
-
 main {
     background-color: var(--neutral2);
     display: block;
-    margin:  0 auto;
+    margin:  0 auto 30px;
     width: 100%;
 }
 
-main section {
-    width: 100%;
-    height: auto;
-}
-
-main section h2 {
+.card h2 {
     font-family: "Playfair Display", serif;
     font-size: 1.5rem;
-    background-color: var(--yellow);
-    color: whitesmoke;
+    color: var(--green);
+    border-bottom: 1px solid var(--yellow);padding: 1.5rem;
+}
+
+.card p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
     padding: 1.5rem;
 }
 
-main section p {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    padding: .25rem;
-}
-
 .card {
+    width: 100%;
+    height: auto;
     border-top: 1px solid var(--black);
     background-color: var(--greige);
-    width: 100%;
+}
+
+#spotlight-box {
+    border-bottom: 1px solid var(--black);
 }
 
 .spotlight {
-    border: 1px solid var(--darkgreen);
-    display: grid;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--yellow);
 }
 
 footer {
@@ -220,7 +191,7 @@ footer {
     color: var(--black);
     padding: 1rem;
     font-family: "Open Sans", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 footer div {
@@ -232,9 +203,16 @@ footer p {
     padding: .5rem;
 }
 
+.qc {
+    font-family: "Fraunces", serif;
+    font-size: 1.5rem;font-weight: 500;
+    border-bottom: 1px solid var(--green);
+}
+
 div.socialmedia img {
     width: 44px;
     height: auto;
+    cursor: pointer;
 }
 
 div.socialmedia {
