@@ -57,7 +57,7 @@
     .card {
         border: 1px solid var(--black);
         background-color: var(--greige);
-        box-shadow: 5px 5px 5px var(--neutral1);
+        box-shadow: 1px 1px 10px var(--neutral1);
     }
 
     #events {

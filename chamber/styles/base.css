@@ -139,7 +139,7 @@ li.active a {
     padding: 1.5rem;
     cursor: pointer;
     background-color: var(--darkgreen);
-    box-shadow: 6px 6px 5px var(--green);
+    box-shadow: 6px 6px 5px var(--neutral1);
     color: var(--greige);
     font-family: "Open Sans", san-serif;
     font-size: 1rem;
