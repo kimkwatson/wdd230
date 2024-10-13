@@ -1,5 +1,13 @@
 @media only screen and (min-width: 1200px) {
 
+    header {
+        grid-template-columns: 200px 1fr 1fr 1fr;
+    }
+    
+    .logo {
+        width: 170px;
+    }
+    
     h1 {
         color: var(--black);
         font-family: "Fraunces", serif;
