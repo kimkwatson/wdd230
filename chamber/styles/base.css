@@ -204,6 +204,10 @@ footer p {
     border-bottom: 1px solid var(--green);
 }
 
+.info {
+    border-bottom: 1px solid var(--green);
+}
+
 div.socialmedia img {
     width: 44px;
     height: auto;
