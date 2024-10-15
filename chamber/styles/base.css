@@ -226,7 +226,6 @@ div.socialmedia {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
-    
     margin: 3rem auto;
 }
 
@@ -234,13 +233,13 @@ section.discover {
     border: 1px solid var(--black);
     background-color: var(--greige);
     box-shadow: 0 0 10px var(--green);
-    margin: 1rem;
+    margin: .25rem;
 }
 
 section.discover h2 {
     padding: 2rem;
     border-bottom: 1px solid var(--black);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: "Playfair Display", serif;
     background-color: var(--neutral1);
     letter-spacing: 2px;
@@ -258,7 +257,7 @@ section.discover ul {
 
 #enjoy p {
     font-family: "Open Sans", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 1.5rem;
     text-align: center;
     border-bottom: 1px solid var(--yellow);
@@ -266,7 +265,7 @@ section.discover ul {
 
 #council p {
     font-family: "Open Sans", sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 1.5rem;
     text-align: left;
     border-bottom: 1px solid var(--yellow);
@@ -280,18 +279,56 @@ section.discover ul {
 #places ul li {
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
     padding: 1rem;
+}
+
+#places ul li::before {
+    content: "\01F4CD";
+    padding-right: 1rem;
 }
 
 #places ul li:nth-child(even) {
     background-color: var(--neutral2);
 }
 
+#temple {
+    display: block;
+    text-align: center;
+}
+
+#temple h2 {
+    text-align: left;
+}
+
+#temple img {
+    width: 50%;
+    height: auto;
+    margin: 1rem;
+}
+
+#temple p {
+    font-family: "Fraunces", serif;
+    font-size: 1.25rem;
+    padding: .5rem;
+}
+
+#temple a {
+    color: var(--black);
+    text-decoration: none;
+    font-family: "Fraunces", serif;
+    font-size: 1.25rem;
+}
+
+#temple a:hover {
+    color: var(--darkgreen);
+    font-weight: 500;
+}
+
 #upcoming li {
     border-bottom: 1px solid var(--yellow);
     padding: 1rem 1vw;
-    font-family: "Fraunces", serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1rem;
 }
 
@@ -302,22 +339,32 @@ section.discover ul {
 #upcoming .num {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
+    font-weight: 500;
     padding: 1rem;
 }
 
 #upcoming .abbr {
     font-family: "Inter", sans-serif;
-    font-size: 1rem;
+    font-size: .75rem;
     padding: 1rem;
 }
 
 main img {
     width: 100%;
     height: auto;
-    padding: 1rem;
+    padding: .5rem;
+    background-color: whitesmoke;
     border: 1px solid var(--black);
     box-shadow: 0 0 10px var(--green);
     animation: fade 2s;
+}
+
+#picturebar figcaption {
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    color: var(--black);
+    text-align: right;
+    padding: 1rem;
 }
 
 @keyframes fade {

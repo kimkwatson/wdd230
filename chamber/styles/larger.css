@@ -115,6 +115,16 @@
     .socialmedia {
         align-self: end;
     }
+
+    /******* Discover Page Styling *******/
+
+    #picturebar img {
+        transition: transform .2s;
+    }
+
+    #picturebar img:hover {
+        transform: scale(1.05);
+    }
     
     
     
