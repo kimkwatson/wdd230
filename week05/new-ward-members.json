@@ -1,0 +1,43 @@
+{
+    "familyName" : "Watson",
+    "date" : "2024-03-1",
+    "familySize" : 7,
+    "visited" : true,
+    "members" : [
+        {
+            "name" : "Steven",
+            "gender" : "male",
+            "birthdate" : "1978-06-24"
+        },
+        {
+            "name" : "Kimberly",
+            "gender" : "female",
+            "birthdate" : "1980-07-31"
+        },
+        {
+            "name" : "Kyle",
+            "gender" : "male",
+            "birthdate" : "2005-04-08"
+        },
+        {
+            "name" : "Allyson",
+            "gender" : "female",
+            "birthdate" : "2007-09-04"
+        },
+        {
+            "name" : "Cole",
+            "gender" : "male",
+            "birthdate" : "2009-05-11"
+        },
+        {
+            "name" : "Nathan",
+            "gender" : "male",
+            "birthdate" : "2013-04-17"
+        },
+        {
+            "name" : "Troy",
+            "gender" : "male",
+            "birthdate" : "2017-20-12"
+        }    
+    ]
+}
