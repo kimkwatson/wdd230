@@ -17,26 +17,21 @@ let visits = Number(window.localStorage.getItem('numVisits-ls')) || 0;
 totalVisits.textContent = `Total Visits: ${visits}`;
 
 let storedDate = localStorage.getItem("storedDateKey");
-const lastVisit = new Date(storedDate);
+const lastVisit = storedDate ? new Date(storedDate) : null;
 const today = new Date();
-const milliseconds = today - lastVisit;
-const days = Math.floor(milliseconds / (1000 * 60 * 60 * 24));
 
-const todayFormatted = today.toISOString().split('T')[0];
-const lastVisitFormatted = lastVisit.toISOString().split('T')[0];
+let days = lastVisit ? Math.floor((today - lastVisit) / (1000 * 60 * 60 * 24)) : 0;
 
-if (visits !== 0) {
-    if (days === 0) {
-        visitsDisplay.textContent = "Back so soon! Awesome!"
-    } else {
-        if (days === 1) {
-            visitsDisplay.textContent = `You last visited ${days} day ago`;
-        } else {
-            visitsDisplay.textContent = `You last visited ${days} days ago`;
-        }
-    }
-} else {
+if (visits === 0) {
     visitsDisplay.textContent = "Welcome! Let us know if you have any questions";
+} else if (days === 0) {
+    visitsDisplay.textContent = "Back so soon! Awesome!";
+} else {
+    if (days === 1) {
+        visitsDisplay.textContent = `You last visited ${days} day ago`;
+    } else {
+        visitsDisplay.textContent = `You last visited ${days} days ago`;
+    }
 }
 
 visits++;
