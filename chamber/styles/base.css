@@ -284,7 +284,6 @@ section.discover ul {
     font-size: 1rem;
     padding: 1rem;
     text-align: left;
-    color: var(--darkgreen);
     border-bottom: 1px solid var(--yellow);
 }
 
@@ -389,7 +388,6 @@ main img {
 #picturebar figcaption {
     font-family: "Inter", sans-serif;
     font-size: 1rem;
-    color: var(--darkgreen);
     text-align: right;
     padding: 1rem;
 }
@@ -428,14 +426,14 @@ ul {
 .weekdays {
     margin: 0;
     padding: .75rem 0;
-    background-color: var(--green);
+    background-color: var(--black);
     text-align: start;
     display: flex;
 }
 
 .weekdays li {
     width: 14.3%;
-    color: var(--black);
+    color: whitesmoke;
     text-align: center;
     flex-wrap: nowrap;
 }
@@ -456,7 +454,7 @@ ul {
     text-align: center;
     margin-bottom: 5px;
     font-size: .75rem;
-    color: var(--green);
+    color: var(--black);
 }
 
 /* Highlight the current day */
