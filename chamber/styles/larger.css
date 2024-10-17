@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
 
     header {
         grid-template-columns: 200px 1fr 1fr 1fr;
@@ -117,6 +117,10 @@
     }
 
     /******* Discover Page Styling *******/
+
+    #discoverPage {
+        grid-template-columns: 1fr 2fr;
+    }
 
     #picturebar img {
         transition: transform .2s;

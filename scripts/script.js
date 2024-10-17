@@ -1,3 +1,5 @@
+// Hamburger Menu
+
 const hamburger = document.querySelector('#hamButton');
 const navigation = document.querySelector('#animateMe');
 
@@ -15,6 +17,8 @@ modeButton.addEventListener('click', () => {
     main.classList.toggle('dark');
 });
 
+// Visits
+
 const visitsDisplay = document.querySelector('.visits');
 
 let visits = Number(window.localStorage.getItem('numVisits-ls')) || 0;
@@ -28,3 +32,42 @@ else {
 
 visits++;
 localStorage.setItem('numVisits-ls', visits);
+
+// Weather
+
+const icon = document.querySelector('#icon');
+const temperature = document.querySelector('#temperature');
+const description = document.querySelector('#description');
+
+const myKey = "a8bc13a741d274988e6ad3be4e09d187";
+const latitude = 33.25;
+const longitude = -111.64;
+
+const url = `//api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${myKey}&units=imperial`;
+
+async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            displayResults(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+
+}
+
+function displayResults(data) {
+    console.log('hello');
+    description.innerHTML = data.weather[0].description;
+    temperature.innerHTML = `${data.main.temp}&deg;F`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x`;
+    icon.setAttribute('src', iconsrc);
+    icon.setAttribute('alt', data.weather[0].description);
+}
+
+apiFetch();
