@@ -65,7 +65,7 @@ function displayResults(data) {
     console.log('hello');
     description.innerHTML = data.weather[0].description;
     temperature.innerHTML = `${data.main.temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     icon.setAttribute('src', iconsrc);
     icon.setAttribute('alt', data.weather[0].description);
 }

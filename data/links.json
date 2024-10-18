@@ -1,0 +1,92 @@
+{
+    "weeks" : [
+        {"week" : "Week 1",
+         "links" : [
+            {
+                "url":"week01/holygrail.html",
+                "title": "Holy Grail Layout"
+            }
+         ]
+        },
+        {
+            "week" : "Week 2",
+            "links" : [
+            {
+                "url":"week02/design.html",
+                "title": "Design Principles"
+            },
+            {
+                "url":"https://codepen.io/kimkwatson/pen/jOgPPWK",
+                "title": "Hamburger Menu"
+            },
+            {
+                "url":"week02/bom.html",
+                "title": "Book of Mormon"
+            }
+            ]
+        },
+        {
+            "week" : "Week 3",
+            "links" : [
+            {
+                "url":"week03/landscape.webp",
+                "title": "Webp"
+            },
+            {
+                "url":"week03/lazyload.html",
+                "title": "Lazy Load"
+            },
+            {
+                "url":"week03/responsive-images.html",
+                "title": "Responsive Images"
+            },
+            {
+                "url":"week03/bom.html",
+                "title": "Book of Mormon"
+            }
+            ]
+        },
+        {
+            "week" : "Week 4",
+            "links" : [
+            {
+                "url":"https://codepen.io/kimkwatson/pen/GRVNNXz",
+                "title": "Pseudo-class"
+            },
+            {
+                "url":"week04/images/combinator-exercise.webp",
+                "title": "Combinator Exercise"
+            },
+            {
+                "url":"week04/tablebuild.html",
+                "title": "HTML Table"
+            },
+            {
+                "url":"week04/Form-start//index.html.html",
+                "title": "HTML Form"
+            }
+            ]
+        },
+        {
+            "week" : "Week 5",
+            "links" : [
+            {
+                "url":"https://codepen.io/kimkwatson/pen/oNKWgbJ",
+                "title": "Pseudo-element"
+            },
+            {
+                "url":"week05/new-ward-members.json",
+                "title": "JSON"
+            },
+            {
+                "url":"week05/prophets.html",
+                "title": "Prophets"
+            },
+            {
+                "url":"week05/weather.html",
+                "title": "Weather"
+            }
+            ]
+        }
+    ]
+}
