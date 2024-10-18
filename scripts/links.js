@@ -1,5 +1,5 @@
 const baseURL = "https://kimkwatson.github.io/wdd230";
-const linksURL = ".data/links.json";
+const linksURL = "https://kimkwatson.github.io/wdd230/data/links.json";
 
 async function getLinks() {
     const response = await fetch(linksURL);
@@ -9,15 +9,17 @@ async function getLinks() {
 }
 
 const displayLinks = (weeks) => {
-    const list = document.querySelector('.activites ul');
+    const list = document.querySelector('.activities ul');
     weeks.forEach((week) =>  {
         let listItem = document.createElement('li');
-        let link = document.createElement('a');
-        link.textContent = week.links.title;
-        link.setAttribute('href', week.links);
-        listItem.textContent = `Week ${week.week}`;
+        listItem.textContent = `${week.week}:   `;
         list.appendChild(listItem);
-        listItem.appendChild(link);
+        week.links.forEach(link => {
+            let linkInfo = document.createElement('a');
+            linkInfo.textContent = `   ${link.title}  |`;
+            linkInfo.setAttribute('href', link.url);
+            listItem.appendChild(linkInfo);
+        })     
     });
 };
 

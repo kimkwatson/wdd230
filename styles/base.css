@@ -130,17 +130,20 @@ h1 {
 }
 
 .overlay p {
-    padding: .5rem;
-    
+    padding: .5rem; 
 }
 
 .container {
     margin: 1rem 2vw;
-    
+}
+
+.container ul li {
+    font-family: "Lustria", serif;
+    font-size: 1.5rem;
+    list-style: inside;
 }
 
 .card {
-    
     border: 1px solid slategray;
     background-color: lightgray;
     border-radius: 10px;
