@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen Creek Chamber of Commerce</title>
+    <meta name="description" content="Queen Creek Chamber of Commerce">
+    <meta name="author" content="Kim Watson">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Inter+Tight&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Queen Creek Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/shops-large.webp">
+    <meta property="og:url" content="kimkwatson.github.io/wdd230/chamber/index.html">
+</head>
+<body>
+    <header>
+        <img src="images/cotton-logo-muted.png" alt="QC Chamber Logo" class="logo" loading="lazy" width="44" height="42">
+        <div class="title">
+            <h1>Queen Creek Chamber of Commerce</h1>
+        </div>
+        <button id="hamButton"></button>
+    </header>
+    <nav id="animateMe">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a>Directory</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="thankyou.html" id="form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name*   <input type="text" id="fname" name="fname" pattern="[a-zA-Z\s.]{2,}" required></label>
+                <label>Last Name*   <input type="text" id="lname" name="lname" pattern="[a-zA-Z\s.]{2,}" required></label>
+                <label>Title/Position   <input type="text" id="title" name="title" pattern="[a-zA-Z\s.]{7,}"></label>
+                <label>Email Address*   <input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label>Phone*   <input type="tel" id="phone" name="tel" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business/Organization*   <input type="text" id="business" name="organization" pattern="[a-zA-Z\s.]{2,}" required></label>
+                <label>Business Description   <input type="text" id="description" name="description" pattern="[a-zA-Z\s.]{2,}" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership</legend>
+                <div id="membershipLabel">Membership Level</div>
+                <label><input type="radio" name="membership" value="nonprofit">NP (Non Profit)</label>
+                <label><input type="radio" name="membership" value="bronze">Bronze</label>
+                <label><input type="radio" name="membership" value="silver">Silver</label>
+                <label><input type="radio" name="membership" value="gold">Gold</label>
+            </fieldset>
+            <input type="submit" value="Join the Chamber">
+        </form>
+        <div id="membershipbar">
+            <section class="card">
+                <h2>NP Membership</h2>
+                <p>Free</p>
+                <ul>
+                    <li>   For Non Profit Organizations</li>
+                    <li>   Subscription to monthly newsletter</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Bronze Membership</h2>
+                <p>$49</p>
+                <ul>
+                    <li>   <i>Includes NP benefits</i></li>
+                    <li>   Access to special events</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Silver Membership</h2>
+                <p>$79</p>
+                <ul>
+                    <li>   <i>Includes NP and Bronze benefits</i></li>
+                    <li>   Quarterly Training</li>
+                    <li>   Event discounts</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Gold Membership</h2>
+                <p>$109</p>
+                <ul>
+                    <li>   <i>Includes NP, Bronze, and Silver benefits</i></li>
+                    <li>   Advertising spotlights</li>
+                </ul>
+            </section>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="info">
+            <span><img src="images/cotton-logo-bw.png" alt="QC Chamber Logo" loading="lazy" width="44" height="42"></span>
+            <p class="qc">Queen Creek Chamber of Commerce</p>
+            <p>101 Ellsworth Rd | 85142 | 480-555-1234</p>
+            <p>Chamber of Commerce Project - Front-end Web Development 230</p>
+            <p>&copy;<span id="year"></span> | Kim Watson<br>Last Modified: <span id="lastModified"></span></p>
+        </div>
+        <div class="socialmedia">
+            <img src="images/facebookicon.webp" alt="facebook">
+            <img src="images/linkedinicon.webp" alt="linkedin">
+            <img src="images/instagramicon.webp" alt="instagram">
+            <img src="images/xicon.png" alt="x">
+            <img src="images/redditicon.webp" alt="reddit">
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>

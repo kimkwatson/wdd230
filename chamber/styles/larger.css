@@ -129,8 +129,24 @@
     #picturebar img:hover {
         transform: scale(1.05);
     }
+
+    /******* Join Page Styling *******/
+
+    #form {
+        grid-column: 1 / 3;
+    }
     
-    
+    #membershipbar .card {
+        margin-top: 1.25rem;
+        box-shadow: 0 0 10px var(--black);
+    }
+
+    #membershipbar h2 {
+        margin: 0 1rem;
+        border-bottom: 1px solid var(--yellow);
+        border-top: none;
+        padding-bottom: 1rem;
+    }
     
     
 }

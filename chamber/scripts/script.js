@@ -13,7 +13,7 @@ hamburger.addEventListener('click', () => {
 const visitsDisplay = document.querySelector('.visits');
 const totalVisits = document.querySelector('.total');
 
-let visits = Number(window.localStorage.getItem('numVisits-ls')) || 0;
+let visits = Number(window.localStorage.getItem('numVisits-ls')) || 1;
 totalVisits.textContent = `Total Visits: ${visits}`;
 
 let storedDate = localStorage.getItem("storedDateKey");
