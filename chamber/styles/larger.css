@@ -147,6 +147,9 @@
         border-top: none;
         padding-bottom: 1rem;
     }
-    
-    
+
+    main {
+        grid-template-rows: 1fr;
+    }
+
 }

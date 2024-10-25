@@ -567,6 +567,14 @@ fieldset {
     grid-template-columns: 1fr 2fr;
 }
 
+#joinMessage {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    padding: 2rem;
+    border: 1px solid var(--darkgreen);
+    grid-column: 1 / 3;
+}
+
 /******* Thank You Page Styling *******/
 
 #thankyou {
