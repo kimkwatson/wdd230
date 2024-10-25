@@ -24,5 +24,3 @@ function controlar() {
 function updateValue(value) {
     document.getElementById('currentValue').innerText = value;
 }
-
-asdf

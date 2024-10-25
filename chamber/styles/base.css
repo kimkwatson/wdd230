@@ -498,7 +498,7 @@ fieldset {
 }
 
 #form input[type="radio"] {
-    width: 100px;
+    width: 50px;
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     padding: 1rem;
