@@ -139,6 +139,7 @@
     #membershipbar .card {
         margin-top: 1.25rem;
         box-shadow: 0 0 10px var(--black);
+        transition: transform 300ms ease-in-out;
     }
 
     #membershipbar h2 {
@@ -150,6 +151,21 @@
 
     main {
         grid-template-rows: 1fr;
+    }
+
+    #membershipbar .card:hover {
+        transform: translateX(-75px);
+    }
+
+    /******* Directory Page Styling *******/
+
+    #memberCard {
+        transition: transform .5s;
+    }
+    
+    #memberCard:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 5px 5px;
     }
 
 }

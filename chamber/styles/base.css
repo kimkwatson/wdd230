@@ -602,22 +602,22 @@ fieldset {
 #memberCard {
     border: 1px solid darkgrey;
     background-color: var(--greige);
-    box-shadow: 0 5px 10px black;
     text-align: center;
 }
 
 #businessName {
     font-size: 1.5rem;
-    margin: 1rem;
     color: #212f3c;
-    padding: .75rem;
     text-align: center;
-    border-bottom: 1px solid var(--black);
 }
 
 #businessAddress {
     color: var(--black);
     margin-top: 1rem;
+}
+
+#businessWebsite {
+    padding-bottom: 1rem;
 }
 
 #businessLogo {

@@ -9,14 +9,6 @@
             "membership" : "gold"
         },
         {
-            "name" : "Sniper Pest Control",
-            "address" : "4423 S Signal Butte Rd",
-            "phone" : "480-555-0987",
-            "website" : "sniperpestcontrol.com",
-            "logo" : "images/businesslogos/sniper.jpg",
-            "membership" : "silver"
-        },
-        {
             "name" : "Bella's Bakery",
             "address" : "234 N Ironwood Rd",
             "phone" : "480-555-2255",
@@ -25,11 +17,11 @@
             "membership" : "bronze"
         },
         {
-            "name" : "S&R Nursery",
-            "address" : "12604 E Germann Rd",
-            "phone" : "480-544-6237",
-            "website" : "srnursery.com",
-            "logo" : "images/businesslogos/nursery.png",
+            "name" : "Icon Realty",
+            "address" : "737 E Heritage Pkwy",
+            "phone" : "480-555-6732",
+            "website" : "iconrealty.com",
+            "logo" : "images/businesslogos/realty.jpg",
             "membership" : "silver"
         },
         {
@@ -41,11 +33,11 @@
             "membership" : "np"
         },
         {
-            "name" : "Icon Realty",
-            "address" : "737 E Heritage Pkwy",
-            "phone" : "480-555-6732",
-            "website" : "iconrealty.com",
-            "logo" : "images/businesslogos/realty.jpg",
+            "name" : "S&R Nursery",
+            "address" : "12604 E Germann Rd",
+            "phone" : "480-544-6237",
+            "website" : "srnursery.com",
+            "logo" : "images/businesslogos/nursery.png",
             "membership" : "silver"
         },
         {
@@ -55,8 +47,15 @@
             "website" : "shortbusshakes.com",
             "logo" : "images/businesslogos/shakes.avif",
             "membership" : "gold"
+        },
+        {
+            "name" : "Sniper Pest Control",
+            "address" : "4423 S Signal Butte Rd",
+            "phone" : "480-555-0987",
+            "website" : "sniperpestcontrol.com",
+            "logo" : "images/businesslogos/sniper.jpg",
+            "membership" : "silver"
         }
-        
     ]
     
 }

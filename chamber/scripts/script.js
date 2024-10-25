@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
             logo.setAttribute('alt', member.name);
             logo.setAttribute('loading', 'lazy');
             logo.setAttribute('width', '250');
-            logo.setAttribute('height', '250');
+            logo.setAttribute('height', '155');
             const business = document.createElement('h2');
             business.setAttribute('id', 'businessName');
             const address = document.createElement('p');
