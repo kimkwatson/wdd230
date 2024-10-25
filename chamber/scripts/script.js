@@ -37,3 +37,46 @@ if (visits === 0) {
 visits++;
 localStorage.setItem('numVisits-ls', visits);
 localStorage.setItem('storedDateKey', today.toISOString().split('T')[0]);
+
+// Directory
+
+const url = "https//:kimkwatson.github.io/wdd230/chamber/data/members.json";
+const cards = document.querySelector('#cards');
+
+async function getMemberData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.table(data.members);
+    displayMembers(data.members);
+}
+
+getMemberData();
+
+const displayMembers = (members) => {
+    members.forEach((member) => {
+        const card = document.createElement('section').id = "memberCard";
+        const business = document.createElement('h2').id = "businessName";
+        const address = document.createElement('p').id = "businessAddress";
+        const phone = document.createElement('p').id = "businessPhone";
+        const website = document.createElement('p').id = "businessWebsite";
+        const logo = document.createElement('img').id = "businessLogo";
+
+        logo.setAttribute('src', member.logo);
+        logo.setAttribute('alt', member.name);
+        logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('width', '340');
+        logo.setAttribute('height', '440');
+        business.textContent = member.name;
+        address.textContent = member.address;
+        phone.textContent = member.phone;
+        website.textContent = member.website;
+
+        card.appendChild(business);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(website);
+        card.appendChild(logo);
+
+        cards.appendChild(card);
+    });
+}

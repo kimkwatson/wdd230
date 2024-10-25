@@ -1,0 +1,62 @@
+{
+    "members": [
+        {
+            "name" : "Accent Landscaping",
+            "address" : "1212 S Crismon Rd",
+            "phone" : "480-555-1652",
+            "website" : "accentlandscaping.com",
+            "logo" : "",
+            "membership" : "gold"
+        },
+        {
+            "name" : "Strike Pest Control",
+            "address" : "4423 S Signal Butte Rd",
+            "phone" : "480-555-0987",
+            "website" : "strikepestcontrol.com",
+            "logo" : "",
+            "membership" : "silver"
+        },
+        {
+            "name" : "Bella's Bakery",
+            "address" : "234 N Ironwood Rd",
+            "phone" : "480-555-2255",
+            "website" : "bellasbakedgood.com",
+            "logo" : "",
+            "membership" : "bronze"
+        },
+        {
+            "name" : "S&R Nursery",
+            "address" : "12604 E Germann Rd",
+            "phone" : "480-544-6237",
+            "website" : "srnursery.com",
+            "logo" : "",
+            "membership" : "silver"
+        },
+        {
+            "name" : "Manes and Miracles",
+            "address" : "412 E Friend Ave",
+            "phone" : "480-556-3434",
+            "website" : "manesandmiracles.com", 
+            "logo" : "",
+            "membership" : "np"
+        },
+        {
+            "name" : "AZ Realty",
+            "address" : "737 E Heritage Pkwy",
+            "phone" : "480-555-6732",
+            "website" : "azrealty.com",
+            "logo" : "",
+            "membership" : "silver"
+        },
+        {
+            "name" : "Short Bus Shakes",
+            "address" : "874 E Rosa Rd",
+            "phone" : "480-544-7222",
+            "website" : "shortbusshakes.com",
+            "logo" : "",
+            "membership" : "gold"
+        }
+        
+    ]
+    
+}

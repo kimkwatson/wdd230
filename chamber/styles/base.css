@@ -576,3 +576,45 @@ fieldset {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
 }
+
+/******* Directory Page Styling *******/
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 10px;
+    margin: 1rem;
+}
+
+#memberCard {
+    border: 1px solid darkgrey;
+    background-color: #922b21;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+}
+
+#businessName {
+    background-color: rgba(229,232,232, .4);
+    color: #212f3c;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #641e16;
+}
+
+#businessAddress {
+    color: whitesmoke;
+    font-size: 1rem;
+    font-family: "Inter Tight", sans-serif;
+    text-shadow: 1px 1px 2px #212f3c;
+}
+
+#businessLogo {
+    height: 60%;
+    width: auto;
+    max-width: 340px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    margin-top: 10%;
+    animation: fade 2s;
+}
