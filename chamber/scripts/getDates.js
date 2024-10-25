@@ -6,4 +6,4 @@ document.getElementById("lastModified").innerHTML = modified;
 
 /* Join Page Timestamp */
 
-//document.querySelector('#date').innerHTML = date;
+document.querySelector('#date').innerHTML = date;

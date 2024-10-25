@@ -67,6 +67,13 @@ document.addEventListener("DOMContentLoaded", () => {
         members.forEach(member => {
             const card = document.createElement('section');
             card.setAttribute('id', 'memberCard');
+            const logo = document.createElement('img');
+            logo.setAttribute('id', 'businessLogo');
+            logo.setAttribute('src', member.logo);
+            logo.setAttribute('alt', member.name);
+            logo.setAttribute('loading', 'lazy');
+            logo.setAttribute('width', '250');
+            logo.setAttribute('height', '250');
             const business = document.createElement('h2');
             business.setAttribute('id', 'businessName');
             const address = document.createElement('p');
@@ -75,23 +82,16 @@ document.addEventListener("DOMContentLoaded", () => {
             phone.setAttribute('id', 'businessPhone');
             const website = document.createElement('p');
             website.setAttribute('id', 'businessWebsite');
-            const logo = document.createElement('img');
-            logo.setAttribute('id', 'businessLogo');
-            logo.setAttribute('src', member.logo);
-            logo.setAttribute('alt', member.name);
-            logo.setAttribute('loading', 'lazy');
-            logo.setAttribute('width', '250');
-            logo.setAttribute('height', '250');
             business.textContent = member.name;
             address.textContent = member.address;
             phone.textContent = member.phone;
             website.textContent = member.website;
 
+            card.appendChild(logo);
             card.appendChild(business);
             card.appendChild(address);
             card.appendChild(phone);
             card.appendChild(website);
-            card.appendChild(logo);
 
             cards.appendChild(card);
         });

@@ -595,26 +595,24 @@ fieldset {
     grid-gap: 10px;
     margin: 1rem;
     padding: 1rem;
-    font-family: "Inter Tight", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
 }
 
 #memberCard {
     border: 1px solid darkgrey;
-    background-color: var(--yellow);
-    border-radius: 5px;
-    box-shadow: 0 0 10px black;
+    background-color: var(--greige);
+    box-shadow: 0 5px 10px black;
     text-align: center;
-    position: relative;
-    height: 600px;
 }
 
 #businessName {
-    background-color: rgba(229,232,232, .4);
+    font-size: 1.5rem;
+    margin: 1rem;
     color: #212f3c;
-    padding: 1rem;
+    padding: .75rem;
     text-align: center;
-    border: 1px solid #641e16;
+    border-bottom: 1px solid var(--black);
 }
 
 #businessAddress {
@@ -625,12 +623,9 @@ fieldset {
 #businessLogo {
     width: 100%;
     height: auto;
-    max-width: 340px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px black;
-    margin: 10%;
+    max-width: 140px;
     animation: fade 2s;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    border: none;
+    margin-top: 1rem;
+    box-shadow: none;
 }
