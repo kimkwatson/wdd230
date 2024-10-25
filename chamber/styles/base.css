@@ -579,16 +579,29 @@ fieldset {
 
 /******* Directory Page Styling *******/
 
+#directory {
+    grid-column: 1 / 5;
+    background-color: var(--neutral2);
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
 #cards {
+    grid-column: 1 / 5;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     grid-gap: 10px;
     margin: 1rem;
+    padding: 1rem;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 1.5rem;
 }
 
 #memberCard {
     border: 1px solid darkgrey;
-    background-color: #922b21;
+    background-color: var(--yellow);
     border-radius: 5px;
     box-shadow: 0 0 10px black;
     text-align: center;
@@ -603,10 +616,8 @@ fieldset {
 }
 
 #businessAddress {
-    color: whitesmoke;
-    font-size: 1rem;
-    font-family: "Inter Tight", sans-serif;
-    text-shadow: 1px 1px 2px #212f3c;
+    color: var(--black);
+    margin-top: 1rem;
 }
 
 #businessLogo {
