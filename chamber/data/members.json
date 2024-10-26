@@ -25,12 +25,44 @@
             "membership" : "silver"
         },
         {
+            "name" : "Improve Life Coaching",
+            "address" : "110 N Ironwood Rd",
+            "phone" : "480-555-1105",
+            "website" : "improvelifecoach.me",
+            "logo" : "images/businesslogos/improve.png",
+            "membership" : "gold"
+        },
+        {
+            "name" : "Laboratorio Dental",
+            "address" : "1901 S Signal Butte Rd",
+            "phone" : "480-555-1227",
+            "website" : "laboratorio-dental.com",
+            "logo" : "images/businesslogos/dental.webp",
+            "membership" : "gold"
+        },
+        {
+            "name" : "Learning House",
+            "address" : "96715 W Ocotillo Rd",
+            "phone" : "480-555-5903",
+            "website" : "learninghouse.edu",
+            "logo" : "images/businesslogos/daycare.webp",
+            "membership" : "bronze"
+        },
+        {
             "name" : "Manes and Miracles",
             "address" : "412 E Friend Ave",
             "phone" : "480-556-3434",
             "website" : "manesandmiracles.com", 
             "logo" : "images/businesslogos/manes.jpg",
             "membership" : "np"
+        },
+        {
+            "name" : "QC Graphic Design",
+            "address" : "1110 S Rittenhouse Rd",
+            "phone" : "480-555-8181",
+            "website" : "qcgraphicdesign.io",
+            "logo" : "images/businesslogos/design.jpg",
+            "membership" : "bronze"
         },
         {
             "name" : "S&R Nursery",
@@ -54,6 +86,14 @@
             "phone" : "480-555-0987",
             "website" : "sniperpestcontrol.com",
             "logo" : "images/businesslogos/sniper.jpg",
+            "membership" : "silver"
+        },
+        {
+            "name" : "Spotless Cleaning",
+            "address" : "900 S Rittenhouse Rd",
+            "phone" : "480-555-0417",
+            "website" : "spotlesscleaning.com",
+            "logo" : "images/businesslogos/cleaning.webp",
             "membership" : "silver"
         }
     ]
