@@ -1,8 +1,8 @@
 const date = new Date();
-document.getElementById("year").innerHTML = date.getFullYear();
+console.log(document.getElementById("year").innerHTML = date.getFullYear());
 
 let modified = document.lastModified;
-document.getElementById("lastModified").innerHTML = modified;
+console.log(document.getElementById("lastModified").innerHTML = modified);
 
 /* Join Page Timestamp */
 

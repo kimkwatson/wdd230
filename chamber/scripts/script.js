@@ -9,36 +9,42 @@ hamburger.addEventListener('click', () => {
 })
 
 // Visits
+document.addEventListener("DOMContentLoaded", () => {
+    
+    const visitsDisplay = document.querySelector('.visits');
+    const totalVisits = document.querySelector('.total');
+    console.log(totalVisits);
 
-const visitsDisplay = document.querySelector('.visits');
-const totalVisits = document.querySelector('.total');
+    let visits = Number(window.localStorage.getItem('numVisits-ls')) || 1;
+    totalVisits.textContent = `Total Visits: ${visits}`;
 
-let visits = Number(window.localStorage.getItem('numVisits-ls')) || 1;
-//totalVisits.textContent = `Total Visits: ${visits}`;
+    let storedDate = localStorage.getItem("storedDateKey");
+    const lastVisit = storedDate ? new Date(storedDate) : null;
+    const today = new Date();
 
-let storedDate = localStorage.getItem("storedDateKey");
-const lastVisit = storedDate ? new Date(storedDate) : null;
-const today = new Date();
+    let days = lastVisit ? Math.floor((today - lastVisit) / (1000 * 60 * 60 * 24)) : 0;
 
-let days = lastVisit ? Math.floor((today - lastVisit) / (1000 * 60 * 60 * 24)) : 0;
-
-if (visits === 0) {
-    visitsDisplay.textContent = "Welcome! Let us know if you have any questions";
-} else if (days === 0) {
-    //visitsDisplay.textContent = "Back so soon! Awesome!";
-} else {
-    if (days === 1) {
-        visitsDisplay.textContent = `You last visited ${days} day ago`;
+    if (visits === 0) {
+        visitsDisplay.textContent = "Welcome! Let us know if you have any questions";
+    } else if (days === 0) {
+        visitsDisplay.textContent = "Back so soon! Awesome!";
     } else {
-        visitsDisplay.textContent = `You last visited ${days} days ago`;
+        if (days === 1) {
+            visitsDisplay.textContent = `You last visited ${days} day ago`;
+        } else {
+            visitsDisplay.textContent = `You last visited ${days} days ago`;
+        }
     }
-}
 
-visits++;
-localStorage.setItem('numVisits-ls', visits);
-localStorage.setItem('storedDateKey', today.toISOString().split('T')[0]);
+    visits++;
+    localStorage.setItem('numVisits-ls', visits);
+    localStorage.setItem('storedDateKey', today.toISOString().split('T')[0]);
+})
+
 
 // Directory
+
+// Cards
 
 document.addEventListener("DOMContentLoaded", () => {
     const url = "https://kimkwatson.github.io/wdd230/chamber/data/members.json";
@@ -98,5 +104,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     getMemberData();
+});
+
+// Buttons
+
+const gridButton = document.querySelector('#gridView');
+const listButton = document.querySelector('#listView');
+const cards = document.querySelector("#cards");
+
+listButton.addEventListener('click', () => {
+    cards.classList.remove('grid');
+    cards.classList.add('list');
+});
+
+gridButton.addEventListener('click', () => {
+    cards.classList.remove('list');
+    cards.classList.add('grid');
 });
 

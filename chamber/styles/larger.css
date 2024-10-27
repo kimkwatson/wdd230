@@ -165,7 +165,6 @@
     
     #memberCard:hover {
         transform: translateY(-8px);
-        background-color: var(--neutral2);
     }
 
 }

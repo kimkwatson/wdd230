@@ -8,6 +8,8 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
 })
 
+// Mode Button
+
 const modeButton = document.querySelector("#modeButton");
 const body = document.querySelector("body");
 const main = document.querySelector("main");

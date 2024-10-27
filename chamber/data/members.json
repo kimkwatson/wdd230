@@ -37,7 +37,7 @@
             "address" : "1901 S Signal Butte Rd",
             "phone" : "480-555-1227",
             "website" : "laboratorio-dental.com",
-            "logo" : "images/businesslogos/dental.webp",
+            "logo" : "images/businesslogos/dental.jpg",
             "membership" : "gold"
         },
         {
@@ -45,7 +45,7 @@
             "address" : "96715 W Ocotillo Rd",
             "phone" : "480-555-5903",
             "website" : "learninghouse.edu",
-            "logo" : "images/businesslogos/daycare.webp",
+            "logo" : "images/businesslogos/daycare.jpg",
             "membership" : "bronze"
         },
         {
@@ -53,7 +53,7 @@
             "address" : "412 E Friend Ave",
             "phone" : "480-556-3434",
             "website" : "manesandmiracles.com", 
-            "logo" : "images/businesslogos/manes.jpg",
+            "logo" : "images/businesslogos/manes2.jpg",
             "membership" : "np"
         },
         {
@@ -77,7 +77,7 @@
             "address" : "874 E Rosa Rd",
             "phone" : "480-544-7222",
             "website" : "shortbusshakes.com",
-            "logo" : "images/businesslogos/shakes.avif",
+            "logo" : "images/businesslogos/shakes.jpg",
             "membership" : "gold"
         },
         {
@@ -93,7 +93,7 @@
             "address" : "900 S Rittenhouse Rd",
             "phone" : "480-555-0417",
             "website" : "spotlesscleaning.com",
-            "logo" : "images/businesslogos/cleaning.webp",
+            "logo" : "images/businesslogos/cleaning.jpg",
             "membership" : "silver"
         }
     ]

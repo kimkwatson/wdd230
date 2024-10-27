@@ -588,7 +588,7 @@ fieldset {
     text-align: center;
 }
 
-#cards {
+.grid {
     grid-column: 1 / 5;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -596,7 +596,7 @@ fieldset {
     margin: 1rem;
     padding: 1rem;
     font-family: "Open Sans", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 #memberCard {
@@ -611,15 +611,6 @@ fieldset {
     text-align: center;
 }
 
-#businessAddress {
-    color: var(--black);
-    margin-top: 1rem;
-}
-
-#businessWebsite {
-    padding-bottom: 1rem;
-}
-
 #businessLogo {
     width: 100%;
     height: auto;
@@ -628,4 +619,41 @@ fieldset {
     border: none;
     margin-top: 1rem;
     box-shadow: none;
+}
+
+/* List View */
+
+#gridView, #listView {
+    cursor: pointer;
+}
+
+.list {
+    grid-column: 1 / 5;
+}
+
+.list #memberCard {
+    border: none;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 1rem;
+    margin: .75rem;
+    align-items: center;
+}
+
+.list #memberCard:nth-child(even) {
+    background-color: var(--neutral1);
+}
+
+.list #businessName {
+    text-align: left;
+}
+
+.list p {
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.list img {
+    display: none;
 }
