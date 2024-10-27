@@ -167,4 +167,11 @@
         transform: translateY(-8px);
     }
 
+    .list #memberCard {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        padding: 1.5rem;
+        align-items: center;
+    }
+
 }

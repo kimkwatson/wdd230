@@ -579,11 +579,15 @@ fieldset {
 
 /******* Directory Page Styling *******/
 
+#gridView, #listView {
+    margin: 1.5rem 1rem 0;
+}
+
 #directory {
     grid-column: 1 / 5;
     background-color: var(--neutral2);
     width: 100%;
-    margin: 0 auto;
+    margin: 1rem 0 0 0;
     padding: 1rem;
     text-align: center;
 }
@@ -593,7 +597,7 @@ fieldset {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     grid-gap: 10px;
-    margin: 1rem;
+    margin: 0 1rem;
     padding: 1rem;
     font-family: "Open Sans", sans-serif;
     font-size: 1.25rem;
@@ -621,6 +625,10 @@ fieldset {
     box-shadow: none;
 }
 
+main div section {
+    padding: 1.5rem;
+}
+
 /* List View */
 
 #gridView, #listView {
@@ -632,12 +640,10 @@ fieldset {
 }
 
 .list #memberCard {
-    border: none;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    padding: 1rem;
-    margin: .75rem;
+    display: block;
+    padding: 1.5rem;
     align-items: center;
+    justify-content: left;
 }
 
 .list #memberCard:nth-child(even) {
