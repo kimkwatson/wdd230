@@ -625,7 +625,7 @@ fieldset {
     box-shadow: none;
 }
 
-main div section {
+#memberCard {
     padding: 1.5rem;
 }
 
