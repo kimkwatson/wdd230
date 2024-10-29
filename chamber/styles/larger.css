@@ -81,13 +81,14 @@
     #spotlight-box {
         grid-column: 1/5;
         grid-row: 3/5;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
     }
 
-    .spotlight {
-        margin: 1rem;
-        padding: 1rem;
-        border: 1px solid var(--darkgreen);
-        display: grid;
+    #spotlight-box h2 {
+        grid-column: 1 / 4;
     }
 
     footer {

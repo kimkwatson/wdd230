@@ -177,12 +177,16 @@ main {
 
 #spotlight-box {
     border-bottom: 1px solid var(--black);
+    display: block;
 }
 
 .spotlight {
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid var(--yellow);
+    text-align: center;
+    min-width: 250px;
+    min-height: 250px;
+    white-space: pre-line;
 }
 
 footer {

@@ -42,6 +42,49 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 
+// Spotlights
+
+document.addEventListener("DOMContentLoaded", () => {
+    const url = "data/members.json";
+
+    async function displaySpotlights() {
+            const response = await fetch(url);
+            const data = await response.json();
+        
+            console.log(data);
+            const currentSpotlights = getSpotlights(data.members, 3);
+
+        document.querySelector("#sl1").appendChild(createItem(currentSpotlights[0]));
+        document.querySelector("#sl2").appendChild(createItem(currentSpotlights[1]));
+        document.querySelector("#sl3").appendChild(createItem(currentSpotlights[2]));
+    }
+
+    function getSpotlights(array, n) {
+        const filteredArray = array.filter(item => item.membership === 'silver' || item.membership === 'gold');
+        console.log(filteredArray);
+        const shuffled = [...filteredArray].sort(() => 0.5 - Math.random());
+        return shuffled.slice(0,n);
+    }
+
+    function createItem(item) {
+        spotlight = document.createElement('div');
+        logo = document.createElement('img');
+        business = document.createElement('p');
+        business.textContent = `${item.name}\n${item.website}`;
+        logo.setAttribute('src', item.logo);
+        logo.setAttribute('alt', item.name);
+        logo.setAttribute('width', '250');
+        logo.setAttribute('height', '150');
+        
+        spotlight.appendChild(logo);
+        spotlight.appendChild(business);
+        //spotlight.appendChild(website);
+        return spotlight;
+    }
+
+    displaySpotlights();
+    });
+
 // Directory
 
 // Cards
