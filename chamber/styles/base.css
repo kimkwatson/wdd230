@@ -129,13 +129,13 @@ li.active a {
 .join {
     width: auto;
     margin: 1rem;
-    padding: 1.5rem;
+    padding: 2rem;
     cursor: pointer;
-    background-color: var(--darkgreen);
-    box-shadow: 6px 6px 5px var(--neutral1);
-    color: var(--greige);
+    background-color: var(--neutral1);
+    box-shadow: 6px 6px 5px var(--black);
+    color: black;
     font-family: "Open Sans", san-serif;
-    font-size: 1rem;
+    font-size: .75rem;
     border: none;
     border-radius: 8px;
     white-space: nowrap;
@@ -145,7 +145,7 @@ li.active a {
 .banner {
     overflow: hidden;
     white-space: nowrap;
-    background-color: var(--yellow);
+    background-color: var(--black);
     color: white;
     padding: 10px;
     font-family: "Open Sans", sans-serif;
@@ -153,12 +153,11 @@ li.active a {
     align-items: center;
     position: relative;
     display: flex;
-    justify-content: space-between;
 }
 
 .close-banner {
-    flex: end;
-    background: none;
+    background: var(--black);
+    color: white;
     border: none;
     padding: .75rem;
     z-index: 10;
