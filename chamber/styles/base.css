@@ -166,6 +166,7 @@ main {
     font-family: "Inter", sans-serif;
     font-size: 1.5rem;
     padding: 1.5rem;
+    white-space: pre-line;
 }
 
 .card {
@@ -173,6 +174,14 @@ main {
     height: auto;
     border-top: 1px solid var(--black);
     background-color: var(--greige);
+}
+
+#weather-icon {
+    width: 30%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    background: none;
 }
 
 #spotlight-box {
