@@ -8,6 +8,13 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
 })
 
+// Banner
+
+const closeButton = document.querySelector('.close-banner');
+closeButton.addEventListener('click', () => {
+    document.querySelector('.banner').style.display = "none";
+})
+
 // Weather
 
 const currentTemp = document.querySelector('#current-temp');
@@ -26,9 +33,9 @@ async function apiFetch() {
             displayResults(data);
         const response2 = await fetch(forecasturl);
         if (response2.ok) {
-            const data = await response.json();
+            const data2 = await response.json();
             console.log(data);
-            displayForecast(data.daily.slice(1, 4));
+            displayForecast(data2.daily.slice(1, 4));
         } else {
             throw Error(await response.text());
         }
@@ -42,9 +49,9 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    let desc = data.weather[0].description;
-    currentTemp.innerHTML = `Today in Queen Creek:\n\n${data.main.temp}&deg;F and ${desc}`;
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    let desc = data.current.weather[0].description;
+    currentTemp.innerHTML = `Today in Queen Creek:\n\n${data.current.temp}&deg;F and ${desc}`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
 }
@@ -55,9 +62,9 @@ function displayForecast(forecasts) {
 
     forecasts.forEach(forecast => {
         const date = new Date(forecast.dt * 1000).toLocaleDateString();
-        const temp = `${forecast.temp.day}&deg;F`;
+        const temp = `${forecast.main.temp}&deg;F`;
         const desc = forecast.weather[0].description;
-        const iconsrc = `https//openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`;
+        const iconsrc = `https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`;
     
         const forecastDiv = document.createElement('div');
         forecastDiv.innerHTML = `<p>${date} ${temp} ${desc}</p><br><img src="${iconsrc}" alt="${desc}">`;

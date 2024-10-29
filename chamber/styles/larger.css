@@ -49,6 +49,11 @@
         height: auto;
     }
 
+    .banner p {
+        animation: scroll 15s linear infinite;
+        width: 70%;
+    }
+
     .join {
         font-size: 1.5rem;
     }
