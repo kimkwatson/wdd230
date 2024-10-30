@@ -40,14 +40,14 @@
                 <legend>Personal Information</legend>
                 <label>First Name*   <input type="text" id="fname" name="fname" pattern="[a-zA-Z]{2,}" required></label>
                 <label>Last Name*   <input type="text" id="lname" name="lname" pattern="[a-zA-Z]{2,}" required></label>
-                <label>Title/Position   <input type="text" id="title" name="title" pattern="[a-zA-Z\s.-]{7,}"></label>
+                <label>Title/Position   <input type="text" id="title" name="title" pattern="[a-zA-Z\s-]{7,}" required></label>
                 <label>Email Address*   <input type="email" id="email" name="email" placeholder="someone@gmail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required></label>
                 <label>Phone*   <input type="tel" id="phone" name="tel" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
             </fieldset>
             <fieldset>
                 <legend>Business Information</legend>
                 <label>Business/Organization*   <input type="text" id="business" name="organization" pattern="[a-zA-Z\s.]{2,}" required></label>
-                <label>Business Description   <input type="text" id="description" name="description" pattern="[a-zA-Z\s.]{2,}" required></label>
+                <label>Business Description   <input type="text" id="description" name="description" pattern="[a-zA-Z\s.]{2,}"></label>
             </fieldset>
             <fieldset>
                 <legend>Choose a Membership</legend>
