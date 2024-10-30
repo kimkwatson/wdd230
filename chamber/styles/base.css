@@ -135,7 +135,7 @@ li.active a {
     box-shadow: 6px 6px 5px var(--black);
     color: black;
     font-family: "Open Sans", san-serif;
-    font-size: .75rem;
+    font-size: 1rem;
     border: none;
     border-radius: 8px;
     white-space: nowrap;
@@ -210,12 +210,43 @@ main {
     background-color: var(--greige);
 }
 
+#events h2 {
+    margin-bottom: 1rem;
+}
+
+#events a {
+    padding: 1.5rem;
+    color: var(--darkgreen);
+    font-size: 1.5rem;
+}
+
 #weather-icon {
     width: 30%;
     height: auto;
     border: none;
     box-shadow: none;
     background: none;
+}
+
+.forecast-icon {
+    width: 20%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+.forecast-day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+    border-bottom: 1px solid var(--yellow);
+}
+
+#forecast {
+    display: block;
+    font-size: .75rem;
 }
 
 #spotlight-box {
