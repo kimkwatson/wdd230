@@ -1,13 +1,12 @@
 // Directory
 
 // Cards
-console.log("Script is loading...");
+
 document.addEventListener("DOMContentLoaded", () => {
     const url = "https://kimkwatson.github.io/wdd230/chamber/data/members.json";
     const cards = document.querySelector('#cards');
 
     async function getMemberData() {
-        console.log("Fetching member data...");
         if (!cards) {
             console.error("No element with id 'cards' found.");
             return;
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             const response = await fetch(url);
             const data = await response.json();
-            console.log(data.members);
             displayMembers(data.members);
         } catch (error) {
             console.error("Error fetching data:", error);

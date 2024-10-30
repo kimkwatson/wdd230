@@ -5,7 +5,7 @@
             "address" : "1212 S Crismon Rd",
             "phone" : "480-555-1652",
             "website" : "accentlandscaping.com",
-            "logo" : "images/businesslogos/accent.jpg",
+            "logo" : "images/businesslogos/accent.webp",
             "membership" : "gold"
         },
         {
@@ -13,7 +13,7 @@
             "address" : "234 N Ironwood Rd",
             "phone" : "480-555-2255",
             "website" : "bellasbakedgoods.com",
-            "logo" : "images/businesslogos/bakery.jpg",
+            "logo" : "images/businesslogos/bakery.webp",
             "membership" : "bronze"
         },
         {
@@ -21,7 +21,7 @@
             "address" : "737 E Heritage Pkwy",
             "phone" : "480-555-6732",
             "website" : "iconrealty.com",
-            "logo" : "images/businesslogos/realty.jpg",
+            "logo" : "images/businesslogos/realty.webp",
             "membership" : "silver"
         },
         {
@@ -29,7 +29,7 @@
             "address" : "110 N Ironwood Rd",
             "phone" : "480-555-1105",
             "website" : "improvelifecoach.me",
-            "logo" : "images/businesslogos/improve.png",
+            "logo" : "images/businesslogos/improve.webp",
             "membership" : "gold"
         },
         {
@@ -37,7 +37,7 @@
             "address" : "1901 S Signal Butte Rd",
             "phone" : "480-555-1227",
             "website" : "laboratorio-dental.com",
-            "logo" : "images/businesslogos/dental.jpg",
+            "logo" : "images/businesslogos/dental.webp",
             "membership" : "gold"
         },
         {
@@ -45,7 +45,7 @@
             "address" : "96715 W Ocotillo Rd",
             "phone" : "480-555-5903",
             "website" : "learninghouse.edu",
-            "logo" : "images/businesslogos/daycare.jpg",
+            "logo" : "images/businesslogos/daycare.webp",
             "membership" : "bronze"
         },
         {
@@ -53,7 +53,7 @@
             "address" : "412 E Friend Ave",
             "phone" : "480-556-3434",
             "website" : "manesandmiracles.com", 
-            "logo" : "images/businesslogos/manes2.jpg",
+            "logo" : "images/businesslogos/manes2.webp",
             "membership" : "np"
         },
         {
@@ -61,7 +61,7 @@
             "address" : "1110 S Rittenhouse Rd",
             "phone" : "480-555-8181",
             "website" : "qcgraphicdesign.io",
-            "logo" : "images/businesslogos/design.jpg",
+            "logo" : "images/businesslogos/design.webp",
             "membership" : "bronze"
         },
         {
@@ -69,7 +69,7 @@
             "address" : "12604 E Germann Rd",
             "phone" : "480-544-6237",
             "website" : "srnursery.com",
-            "logo" : "images/businesslogos/nursery.png",
+            "logo" : "images/businesslogos/nursery.webp",
             "membership" : "silver"
         },
         {
@@ -77,7 +77,7 @@
             "address" : "874 E Rosa Rd",
             "phone" : "480-544-7222",
             "website" : "shortbusshakes.com",
-            "logo" : "images/businesslogos/shakes.jpg",
+            "logo" : "images/businesslogos/shakes.webp",
             "membership" : "gold"
         },
         {
@@ -85,7 +85,7 @@
             "address" : "4423 S Signal Butte Rd",
             "phone" : "480-555-0987",
             "website" : "sniperpestcontrol.com",
-            "logo" : "images/businesslogos/sniper.jpg",
+            "logo" : "images/businesslogos/sniper.webp",
             "membership" : "silver"
         },
         {
@@ -93,7 +93,7 @@
             "address" : "900 S Rittenhouse Rd",
             "phone" : "480-555-0417",
             "website" : "spotlesscleaning.com",
-            "logo" : "images/businesslogos/cleaning.jpg",
+            "logo" : "images/businesslogos/cleaning.webp",
             "membership" : "silver"
         }
     ]

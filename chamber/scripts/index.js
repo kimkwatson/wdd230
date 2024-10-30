@@ -11,7 +11,7 @@ closeButton.addEventListener('click', () => {
 // Weather
 
 const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
+const weatherIcon = document.createElement('img');
 const forecastContainer = document.querySelector('#forecast');
 
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=33.25&lon=-111.64&units=imperial&appid=a8bc13a741d274988e6ad3be4e09d187";
@@ -22,7 +22,6 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             displayResults(data);
         } else {
             throw Error(await response.text());
@@ -37,7 +36,6 @@ async function apiFetch2() {
         const response2 = await fetch(url2);
         if (response2.ok) {
             const data2 = await response2.json();
-            console.log(data2);
             displayForecast(data2.list);
         } else {
             throw Error(await response2.text());
@@ -56,6 +54,9 @@ function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    figure = document.querySelector('#weather-icon');
+    figure.appendChild(weatherIcon);
+    
 }
 
 function displayForecast(forecasts) {    

@@ -220,7 +220,7 @@ main {
     font-size: 1.5rem;
 }
 
-#weather-icon {
+#weather-icon img {
     width: 30%;
     height: auto;
     border: none;
